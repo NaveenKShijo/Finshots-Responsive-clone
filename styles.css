@@ -1,0 +1,98 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.navbarList li{
+    margin-left: 2em;
+    font-weight: 500;
+}
+
+.firstMain
+{
+    margin-top:5em;
+}
+
+.message{
+    color:black;
+    font-weight:500;
+    height: 41px;
+    width:291px;
+    border-radius:20;
+    background-color: rgb(251, 246, 246);
+}
+.message span{
+    color:red;
+}
+
+.firstMain input{
+    /* width:18em; */
+    width:100%;
+    margin-top:2em;
+    border-radius: 10px;
+    height: 3em;
+    border:none;
+}
+.firstMain button{
+    width: 100%;
+    margin-top: 2em;
+    height: 3em;
+    background-color: rgb(123, 70, 236);
+    color: white;
+    border-radius: 15px;
+    border:none;
+}
+
+
+#btn1{
+    position: relative;
+    top:2em;
+
+    height: 2em;
+    font-size: 18px;
+    border:none;
+    border-radius:10px;
+    font-weight: 500;
+    z-index:3;
+}
+
+
+h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-color: yellow;
+    font-weight:800;
+}
+
+.mailBox{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.mailBox input{
+    height: 3em;
+    width: 100%;
+    border:none;
+    border-radius: 10px;
+    color: rgb(85, 84, 84);
+    font-weight: 500;
+}
+.mailBox button{
+    height: 3em;
+    width: 100%;
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(123, 70, 236);
+    color:white;
+    font-weight:500;
+}
+
+
+footer{
+    margin-top: 50px;
+}
+
+.firstP{
+    color: grey;
+    font-weight: 500;
+    font-size: 13px;
+}
