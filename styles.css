@@ -2,9 +2,38 @@
     margin:0px;
     padding:0px;
 }
+#exPandNav a{
+    color: black;
+}
+.cardInfo{
+    cursor: pointer;
+}
 .navbarList li{
     margin-left: 2em;
     font-weight: 500;
+}
+
+/* hamburger button working to show nav items */
+/* #navOverlay {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 56px);
+  background-color: #fff;
+  z-index: 999;
+  padding: 2rem;
+  display: none;
+}
+
+#navOverlay.show {
+  display: block;
+} */
+/* until here */
+
+
+input{
+    height: 80px;
 }
 
 .firstMain

@@ -13,30 +13,68 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    
+
+
+    
+
 </head>
 
 <body class="bg-light">
+    
     <header class="p-3">
-        <nav class="navbar container-xl navbar-expand-md">
-                <a href="index.html"><img height="40px" width="155px" src="https://d3jlwjv6gmyigl.cloudfront.net/images/2019/08/logo_horizontal.png"></a>
+  <nav class="navbar container-xl navbar-expand-md">
+    <a href="index.html">
+      <img height="40px" width="155px" src="https://d3jlwjv6gmyigl.cloudfront.net/images/2019/08/logo_horizontal.png">
+    </a>
 
-                <button type="button" class="navbar-toggler order-2 order-md-1" data-toggle="collapse" data-target="#exPandNav">
-                    <img src="images/burgerbutton.png">
-                </button>
+    <!-- Updated Bootstrap 5 collapse button -->
+    <button id="openMenu" type="button" class="navbar-toggler order-2 order-md-1" data-bs-toggle="collapse" data-bs-target="#exPandNav" aria-controls="exPandNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="images/burgerbutton.png">
+    </button>
 
-                <div class="collapse navbar-collapse" id = "exPandNav">
-                    <ul class="navbar-nav navbarList">
-                        <li class="nav-item active ">Finshots Daily </li>
-                        <li class="nav-item active">Finshots Markets </li>
-                        <li class="nav-item active">Finshots Money </li>
-                        <li class="nav-item active">Infographics</li>
-                        <li class="nav-item active">Ditto Insurance</li>
-                    </ul>
-                </div>
-                <div class="ms-auto order-1 order-md-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div>
-            </div>
+    
+    <!-- Navbar collapsible content -->
+    <div class="collapse navbar-collapse" id="exPandNav">
+      <ul class="navbar-nav navbarList">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Finshots Daily</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#markets">Finshots Markets</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#money">Finshots Money</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#info">Infographics</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://joinditto.in/ask-ditto/?utm_source=finshots&utm_medium=header" target="_blank">Ditto Insurance</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Search icon -->
+    <div class="ms-auto order-1 order-md-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="28" height="28" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#searchOnlyModal">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="searchOnlyModal">
+    <div class="modal-dialog">
+      <div class="modal-content border-0 bg-transparent">
+        <div class="modal-body text-center">
+          <input type="text" class="form-control" placeholder="Search posts and tags" autofocus>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
+</header>
+
 
     <main>
         <div class="container-xl firstMain" >
@@ -71,7 +109,7 @@
             <!-- Cards below -->
         <div class="row  container-fluid mt-4 justify-content-even">
             <div class="col-sm-6  col-md-4 col-lg-3">
-                <div class="card">
+                <div class="card cardInfo">
                         <img src="https://cdn.finshots.app/images/2025/06/siri.jpg">
                         <div class="card-body">
                             <p class="card-text"><h6>June 23, 2025</h6><br><h4>Should Apple kill Siri? </h4> An explainer on how Siri might be holding Apple back in the AI Race.</p>
@@ -80,7 +118,7 @@
             </div>
 
             <div class=" col-sm-6  col-md-4 col-lg-3">
-                <div class="card">
+                <div class="card cardInfo">
                     <img src="https://cdn.finshots.app/images/2025/06/anime@1x_1.jpg">
                     <div class="card-body">
                         <p class="card-text"><h6>June 22, 2025</h6><br><h4>Japan's anime troubles, what's up with Labubu & more...  </h4> A Sunny Side Up edition where we talk about Japan's anime cricis, the Labubu craze and more. </p>
@@ -88,7 +126,7 @@
                 </div>
             </div>
             <div class="col-sm-6  col-md-4 col-lg-3">
-                <div class="card">
+                <div class="card cardInfo">
                     <img src="https://cdn.finshots.app/images/2025/06/weekly-wrapup2--1-.jpg">
                     <div class="card-body">
                         <p class="card-text"><h6>June 21, 2025</h6><br><h4>SEBI's recent board meeting, India's fertilizer crisis & more.. </h4> An explainer on how Siri might be holding Apple back in the AI Race.</p>
@@ -96,7 +134,7 @@
                 </div>
             </div>
             <div class=" col-sm-6  col-md-12 col-lg-3">
-                <div class="card">
+                <div class="card cardInfo">
                     <img src="https://cdn.finshots.app/images/2025/06/ONOT.jpg">
                     <div class="card-body">
                         <p class="card-text"><h6>June 20, 2025</h6><br><h4>One Nation, One Time </h4> An explainer about India's push to sync every system to it's own time and why it matters.</p>
@@ -108,38 +146,38 @@
 
 
         <!--  Finshots Markets -->
-        <section>
+        <section id="markets">
         <div class="container-xxl mt-5">
             <div class="row">
                 <div class="col-sm-6">
                     <h3>Finshots Markets</h3> <hr style="border: 2px solid rgb(0, 0, 0); opacity:1;">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-8 cardInfo">
                             <h5 style="font-weight: 700;">An explainer on market changes from SEBI's recent board meeting </h5>
                             <p>Reforms from the SEBI’s recent board meeting and what they mean for IPOs, PSUs and everyday investors.</p>
                             <p>Jun 20, 2025 </p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 cardInfo">
                             <img class="img-fluid" src="https://cdn.finshots.app/images/2025/06/IPO--PSU--QIP.jpg" >
                         </div>
                         <hr/>
 
-                        <div class="col-8">
+                        <div class="col-8 cardInfo">
                             <h5 style="font-weight: 700;">The Oswal Pumps IPO - riding on a government pipeline</h5>
                             <p>A story that dives into the Oswal Pumps IPO.</p>
                             <p>Jun 13, 2025 </p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 cardInfo">
                             <img class="img-fluid" src="https://cdn.finshots.app/images/2025/06/Oswal-pumps-ipo.jpg" >
                         </div>
                         <hr/>
 
-                        <div class="col-8">
+                        <div class="col-8 cardInfo">
                             <h5 style="font-weight: 700;">What's the buzz around Apollo Micro Systems?</h5>
                             <p>An explainer about how this defence electronics firm is transforming and why markets are taking notice.</p>
                             <p>Jun 6, 2025 </p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 cardInfo">
                             <img class="img-fluid" src="https://cdn.finshots.app/images/2025/06/AMS.jpg" >
                         </div>
                         <hr/>
@@ -148,32 +186,32 @@
                 <div class="col-sm-6">
                     <h3>Top Articles</h3> <hr style="border: 2px solid black;  opacity: 1;" />
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-8 cardInfo">
                             <h5 style="font-weight: 700;">Is ANI a bully?</h5>
                             <p>A story that takes a closer look at copyright infringement in the business of content creation.</p>
                             <p>May 28, 2025 </p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 cardInfo">
                             <img class="img-fluid" src="https://cdn.finshots.app/images/2025/05/Ani-Copyright-issue.png" >
                         </div>
                         <hr/>
 
-                        <div class="col-8">
+                        <div class="col-8 cardInfo">
                             <h5 style="font-weight: 700;">Can cannabis drinks shake up the US's alcohol industry?</h5>
                             <p>A story on why THC beverages are taking over the US drinks market and if they can displace the alcohol industry.</p>
                             <p>May 15, 2025 </p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 cardInfo">
                             <img class="img-fluid" src="https://cdn.finshots.app/images/2025/05/THC-FinshotsV2.jpg" >
                         </div>
                         <hr/>
 
-                        <div class="col-8">
+                        <div class="col-8 cardInfo">
                             <h5 style="font-weight: 700;">Why are FMCG companies suddenly obsessed with protein?</h5>
                             <p>An explainer on why Indian companies are chasing protein-packed foods and who might win the race.</p>
                             <p>May 6, 2025 </p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 cardInfo">
                             <img class="img-fluid" src="https://cdn.finshots.app/images/2025/05/FMCG-FinshotsV2.jpg" >
                         </div>
                         <hr/>
@@ -184,9 +222,9 @@
         </section>
 
         <!-- Book image -->
-        <section>
+        <section >
             <div class="container-xxl">
-                <img class="img-fluid" src="https://cdn.finshots.app/images/2025/01/finshots-book-launch-banner.png">
+                <img class="cardInfo img-fluid" src="https://cdn.finshots.app/images/2025/01/finshots-book-launch-banner.png">
             </div>
         </section>
 
@@ -208,7 +246,7 @@
         </section>
 
                 <!-- Finshots Money -->
-        <section>
+        <section id="money">
             <div class="container-xxl">
                 <button type="button" id="btn1">Finshots Money</button> <hr/>
             </div>
@@ -216,7 +254,7 @@
             <!-- Cards below -->
         <div class="row  container-fluid mt-4 justify-content-even">
             <div class="col-sm-6  col-md-4 col-lg-3">
-                <div class="card">
+                <div class="card cardInfo">
                         <img src="https://cdn.finshots.app/images/2025/01/Newsletter-artwork-1-V1.png">
                         <div class="card-body">
                             <p class="card-text"><h6>Jan 31, 2025</h6><br><h4>Finshots Cracks Crypto #3: Bitcoin and cryptos beyond money </h4> The third part of our Finshots Cracks Crypto series where we tell you why you should care about Bitcoin or crypto</p>
@@ -225,7 +263,7 @@
             </div>
 
             <div class=" col-sm-6  col-md-4 col-lg-3">
-                <div class="card">
+                <div class="card cardInfo">
                     <img src="https://cdn.finshots.app/images/2025/01/evolution-of-money--1-.jpg">
                     <div class="card-body">
                         <p class="card-text"><h6>June 24, 2025</h6><br><h4>Finshots Cracks Crypto #2: What's Money?! From Barter to Bitcoin </h4> The second part to our Finshots Cracks Crypto series where we take a trip down the money lane!</p>
@@ -233,7 +271,7 @@
                 </div>
             </div>
             <div class="col-sm-6  col-md-4 col-lg-3">
-                <div class="card">
+                <div class="card cardInfo">
                     <img src="https://cdn.finshots.app/images/2025/01/crypto-series1.jpg">
                     <div class="card-body">
                         <p class="card-text"><h6>Jan 17, 2025</h6><br><h4>Finshots Cracks Crypto #1: What are blockchain and cryptocurrency anyway?!</h4> An explainer where we kick off the 'Finshots Cracks Crypto' series and tell you about cryptocurrencies, blockchain, and Bitcoin!</p>
@@ -241,7 +279,7 @@
                 </div>
             </div>
             <div class=" col-sm-6  col-md-12 col-lg-3">
-                <div class="card">
+                <div class="card cardInfo">
                     <img src="https://cdn.finshots.app/images/2024/03/chasing-the-fire-MM4-1-.jpg">
                     <div class="card-body">
                         <p class="card-text"><h6>March 3, 2024</h6><br><h4>Finshots Money Milestones #4 - Chasing FIRE </h4> An explainer on what it takes to retire early in India.</p>
@@ -252,7 +290,7 @@
         </section>
 
         <!-- Infographics -->
-        <section>
+        <section id="info">
             <div class="container-xxl" style="margin-bottom:40px;">
                 <button type="button" id="btn1">Infographics</button> <hr/>
             </div>
@@ -261,7 +299,7 @@
             <!-- Cards below -->
         <div class="row  container-fluid mt-4 gx-5 justify-content-even">
             <div class="col-sm-6 col-md-4 ">
-                <div class="card">
+                <div class="card cardInfo">
                         <img class="img-fluid" src="https://cdn.finshots.app/images/2025/06/Top-1o-Rich-Cities_Final3.jpg">
                         <div class="card-body">
                             <p class="card-text"><h6>May 22, 2025</h6><h4>Top 10 Richest Indian Cities </h4> </p>
@@ -270,7 +308,7 @@
             </div>
 
             <div class=" col-sm-6  col-md-4 ">
-                <div class="card">
+                <div class="card cardInfo">
                     <img class="img-fluid" src="https://cdn.finshots.app/images/2025/06/GDP-vs-Per-Capita.jpg">
                     <div class="card-body">
                         <p class="card-text"><h6>March 3, 2024</h6><br><h4>GDP vs GDP Per Capita </h4></p>
@@ -278,7 +316,7 @@
                 </div>
             </div>
             <div class="col-sm-6  col-md-4 ">
-                <div class="card">
+                <div class="card cardInfo">
                     <img class="img-fluid" src="https://cdn.finshots.app/images/2025/06/Rental.png">
                     <div class="card-body">
                         <p class="card-text"><h6>March 3, 2024</h6><br><h4>Comparison of rents across Indian cities</h4></p>
@@ -295,30 +333,30 @@
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
                    <img height="40px" width="155px" src="https://d3jlwjv6gmyigl.cloudfront.net/images/2019/08/logo_horizontal.png">
                    <p>Financial news made simple</p>
-                   <p>Checkout Ditto</p>
-                   <p>Order our book</p>
+                   <p class="cardInfo">Checkout Ditto</p>
+                   <p class="cardInfo">Order our book</p>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
                     <p class="firstP">CONTACT US</p>
-                    <p>hi@finshots.in</p>
+                    <p class="cardInfo">hi@finshots.in</p>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
                    <p class="firstP">OUR INFORMATION</p>
-                   <p>Privacy Policy</p>
-                   <p>Terms of Service</p>
-                   <p>Grievance Redressal</p>
+                   <p class="cardInfo">Privacy Policy</p>
+                   <p class="cardInfo">Terms of Service</p>
+                   <p class="cardInfo">Grievance Redressal</p>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
                     <p class="firstP">DITTO INSURANCE<p>
-                    <p>Health Insurance Checklist</p>
-                    <p>Health Insurance Companies</p>
-                    <p>Term Insurance 101</p>
+                    <p class="cardInfo">Health Insurance Checklist</p>
+                    <p class="cardInfo">Health Insurance Companies</p>
+                    <p class="cardInfo">Term Insurance 101</p>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 cardInfo">
                     <img height="40px" width="250px" src="https://d3jlwjv6gmyigl.cloudfront.net/assets/App_store_badge.svg"> <br><br>
                     <img height="50px" width="150px" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 cardInfo">
                    <i class="fa-brands fa-youtube" style="color: #a70202;font-size: 30px;"></i>
                    <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
                    <i class="fa-brands fa-x-twitter"style="font-size: 30px;"></i>
